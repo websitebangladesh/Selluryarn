@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Run by Yarn 💜 | Handmade Crochet Cuties — Narayanganj</title>
+<meta name="description" content="Run by Yarn — a tiny handmade crochet studio in Narayanganj. Plushies, dolls, hair clips, buns & keychains in your favourite colours. Order via cart + bKash.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF3E4; --cream-2:#FFFDF6; --card:#FFFDF8;
+  --ink:#5A4356; --ink-soft:#8A6E84;
+  --primary:#8E4CA4; --primary-deep:#6E3585; --primary-soft:#EAD6F0; --primary-soft-2:#F5EBF9;
+  --gold:#F6B71E; --pink:#F272B0; --green:#57B33E; --red:#E2483D; --bkash:#E2136E;
+  --line:#F1E6D3;
+  --fd:'Fredoka',sans-serif; --fb:'Quicksand',sans-serif;
+  --shadow:0 10px 30px rgba(110,53,133,.10);
+}
+body[data-theme="rose"]{--primary:#E5639E;--primary-deep:#C2437F;--primary-soft:#FBDFEC;--primary-soft-2:#FDEFF6}
+body[data-theme="meadow"]{--primary:#4FA36A;--primary-deep:#3B8254;--primary-soft:#DDF0E2;--primary-soft-2:#EEF8F0}
+body[data-theme="sky"]{--primary:#5FA8DC;--primary-deep:#4389BE;--primary-soft:#DCEEFB;--primary-soft-2:#EDF7FD}
+body[data-theme="honey"]{--primary:#E09A1F;--primary-deep:#B87A0C;--primary-soft:#FBEAD0;--primary-soft-2:#FDF4E3}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--cream);color:var(--ink);
+  background-image:radial-gradient(rgba(142,76,164,.055) 2px,transparent 2.6px);background-size:28px 28px;
+  -webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img{max-width:100%}
+button{font-family:inherit}
+h1,h2,h3,h4{font-family:var(--fd)}
+::selection{background:var(--primary-soft)}
+.wrap{max-width:1150px;margin:0 auto}
+section{padding:60px 20px}
+
+/* ---------- announcement ---------- */
+.announce{background:var(--primary);color:#FFF4DE;text-align:center;font-weight:600;font-size:.82rem;padding:8px 14px;letter-spacing:.3px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(255,253,246,.94);backdrop-filter:blur(8px);border-bottom:2px dashed var(--primary-soft)}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-txt b{font-family:var(--fd);font-weight:700;font-size:1.25rem;color:var(--primary-deep);display:block;line-height:1}
+.logo-txt span{font-size:.7rem;color:var(--ink-soft);font-weight:700;letter-spacing:.5px}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{text-decoration:none;color:var(--ink-soft);font-weight:700;font-size:.92rem;padding:8px 12px;border-radius:999px;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--primary-deep);background:var(--primary-soft-2)}
+.icon-btn{position:relative;width:44px;height:44px;border-radius:50%;background:var(--primary-soft-2);border:2px solid var(--primary-soft);cursor:pointer;font-size:1.05rem;display:grid;place-items:center;color:var(--primary-deep);transition:.2s}
+.icon-btn:hover{background:var(--primary-soft)}
+.badge-n{position:absolute;top:-5px;right:-5px;min-width:20px;height:20px;border-radius:999px;background:var(--pink);color:#fff;font-size:.7rem;font-weight:700;display:grid;place-items:center;padding:0 4px}
+.badge-n.pop{animation:pop .3s ease}
+@keyframes pop{50%{transform:scale(1.35)}}
+.burger{display:none}
+.mobile-menu{display:none;flex-direction:column;padding:8px 16px 14px;border-top:2px dashed var(--primary-soft)}
+.mobile-menu.show{display:flex}
+.mobile-menu a{text-decoration:none;color:var(--ink);font-weight:700;padding:10px;border-radius:12px}
+.mobile-menu a:hover{background:var(--primary-soft-2);color:var(--primary-deep)}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;max-width:1150px;margin:auto;padding:52px 20px 34px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--cream-2);border:2px dashed var(--primary-soft);color:var(--primary-deep);font-weight:700;font-size:.85rem;padding:8px 16px;border-radius:999px}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.12;color:var(--ink);margin:16px 0 14px;font-weight:700}
+.hero h1 .hl{color:var(--primary)}
+.hero p.lead{font-size:1.04rem;color:var(--ink-soft);line-height:1.7;max-width:480px;font-weight:500}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--fd);font-weight:600;font-size:1rem;padding:13px 24px;border-radius:999px;background:var(--primary);color:#fff;border:none;cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .2s,background .2s;box-shadow:0 8px 18px rgba(110,53,133,.22)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(110,53,133,.28)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:var(--cream-2);color:var(--primary-deep);border:2px dashed var(--primary);box-shadow:none}
+.btn.wide{width:100%}
+.hero-stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:26px;color:var(--ink-soft);font-weight:700;font-size:.9rem}
+.hero-art{position:relative;display:grid;place-items:center}
+.doll-wrap{width:min(460px,88vw);filter:drop-shadow(0 18px 30px rgba(110,53,133,.14))}
+.mini-yarn{position:absolute;opacity:.95}
+
+/* ---------- badges strip ---------- */
+.strip{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:1000px;margin:6px auto 0;padding:0 20px 10px}
+.strip .chip{display:flex;align-items:center;gap:8px;background:var(--cream-2);border:2px solid var(--line);border-radius:999px;padding:9px 18px;font-weight:700;font-size:.87rem;color:var(--ink-soft)}
+.strip .chip b{color:var(--primary-deep)}
+
+/* ---------- section headers ---------- */
+.sec-head{text-align:center;margin-bottom:32px}
+.sec-title{font-size:clamp(1.65rem,3.4vw,2.35rem);color:var(--ink);font-weight:700}
+.sec-title .em{color:var(--primary)}
+.sec-sub{color:var(--ink-soft);margin-top:8px;font-weight:600;font-size:.98rem}
+.squig{display:block;width:130px;margin:12px auto 0}
+
+/* ---------- shop ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:14px}
+.tab{font-family:var(--fd);font-weight:600;font-size:.9rem;padding:9px 18px;border-radius:999px;border:2px solid var(--primary-soft);background:var(--cream-2);color:var(--ink-soft);cursor:pointer;transition:.2s}
+.tab:hover{border-color:var(--primary);color:var(--primary-deep)}
+.tab.on{background:var(--primary);border-color:var(--primary);color:#fff}
+.shop-note{text-align:center;color:var(--ink-soft);font-weight:600;font-size:.9rem;margin-bottom:30px}
+.segment{margin-bottom:38px}
+.seg-head{border-radius:20px;padding:16px 22px;margin-bottom:18px;border:2px solid rgba(255,255,255,.8)}
+.seg-head h3{font-size:1.25rem;color:var(--ink)}
+.seg-head p{color:var(--ink-soft);font-weight:600;font-size:.88rem;margin-top:3px}
+.p-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:18px}
+.p-card{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:14px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .2s,transform .2s}
+.p-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.p-art{aspect-ratio:1;border-radius:16px;display:grid;place-items:center;overflow:hidden}
+.p-art svg{width:76%;height:auto;filter:drop-shadow(0 4px 5px rgba(0,0,0,.07))}
+.p-card h4{font-size:1.02rem;font-weight:600;color:var(--ink)}
+.p-desc{font-size:.84rem;color:var(--ink-soft);font-weight:500;line-height:1.5;flex:1}
+.p-price{font-family:var(--fd);font-weight:700;font-size:1.18rem;color:var(--primary-deep)}
+.p-price small{font-size:.72rem;color:var(--ink-soft);font-family:var(--fb);font-weight:700}
+.swatches{display:flex;flex-wrap:wrap;gap:7px}
+.swatch{width:24px;height:24px;border-radius:50%;border:2px solid rgba(0,0,0,.10);cursor:pointer;transition:.15s}
+.swatch.on{outline:2.5px solid var(--primary);outline-offset:2px}
+.p-sel{font-size:.78rem;color:var(--ink-soft);font-weight:600}
+.p-sel b{color:var(--ink)}
+.add-btn{width:100%;padding:10px;border-radius:999px;border:2px solid var(--primary-soft);background:var(--primary-soft-2);color:var(--primary-deep);font-family:var(--fd);font-weight:600;cursor:pointer;transition:.2s}
+.add-btn:hover{background:var(--primary);border-color:var(--primary);color:#fff}
+
+/* ---------- how to order ---------- */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1050px;margin:0 auto 26px}
+.step{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:20px;position:relative}
+.step .num{width:40px;height:40px;border-radius:50%;background:var(--gold);color:#5C4300;font-family:var(--fd);font-weight:700;display:grid;place-items:center;font-size:1.1rem;margin-bottom:10px}
+.step h4{font-size:1.02rem;margin-bottom:5px}
+.step p{font-size:.87rem;color:var(--ink-soft);font-weight:500;line-height:1.55}
+.del-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1050px;margin:0 auto}
+.del-card{border-radius:20px;padding:18px 20px;border:2px solid var(--line);background:var(--cream-2)}
+.del-card .fee{font-family:var(--fd);font-weight:700;font-size:1.5rem;color:var(--primary-deep)}
+.del-card h4{font-size:1rem;margin:4px 0 2px}
+.del-card p{font-size:.83rem;color:var(--ink-soft);font-weight:500}
+.bkash-card{grid-column:1/-1;background:#FDEBF3;border-color:#F7C4DC}
+.bkash-card .bk-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.bkash-logo{font-weight:800;color:var(--bkash);font-size:1.3rem;font-style:italic;letter-spacing:-.5px}
+.bk-num{font-family:var(--fd);font-weight:700;font-size:1.25rem;color:var(--ink);background:#fff;border:2px solid #F7C4DC;border-radius:12px;padding:6px 14px}
+.bkash-card p{font-size:.88rem;color:#8A4A64;font-weight:600;margin-top:10px;line-height:1.6}
+.copy-btn{background:#fff;border:2px solid #F7C4DC;color:var(--bkash);border-radius:999px;padding:7px 14px;font-weight:700;cursor:pointer;font-size:.82rem;transition:.2s}
+.copy-btn:hover{background:var(--bkash);color:#fff;border-color:var(--bkash)}
+
+/* ---------- reviews ---------- */
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;max-width:1050px;margin:0 auto 26px}
+.rev-card{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.rev-top{display:flex;align-items:center;gap:12px}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--primary-soft);color:var(--primary-deep);font-family:var(--fd);font-weight:700;display:grid;place-items:center;font-size:1.1rem;flex-shrink:0}
+.rev-who b{display:block;font-size:.95rem}
+.rev-who span{font-size:.76rem;color:var(--ink-soft);font-weight:700}
+.stars{margin-left:auto;color:var(--gold);letter-spacing:1px;font-size:.95rem;white-space:nowrap}
+.stars .off{color:#E8DEC9}
+.rev-text{font-size:.9rem;color:var(--ink-soft);font-weight:500;line-height:1.65}
+.rev-meta{font-size:.75rem;color:var(--ink-soft);font-weight:700;background:var(--primary-soft-2);border-radius:999px;padding:4px 10px;align-self:flex-start}
+.rev-photo{width:100%;border-radius:14px;border:2px solid var(--line);cursor:zoom-in;max-height:230px;object-fit:cover}
+.rev-cta{text-align:center}
+.rev-form .field{margin-bottom:14px}
+.star-row{display:flex;gap:6px}
+.star-btn{background:none;border:none;font-size:1.7rem;color:#E8DEC9;cursor:pointer;transition:.15s;line-height:1}
+.star-btn.on{color:var(--gold)}
+.photo-prev{position:relative;display:none;margin-top:8px}
+.photo-prev.show{display:block}
+.photo-prev img{max-height:150px;border-radius:14px;border:2px solid var(--line)}
+.photo-prev button{position:absolute;top:6px;right:6px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;border:none;cursor:pointer}
+
+/* ---------- faq ---------- */
+.faq{max-width:760px;margin:0 auto}
+.faq-item{background:var(--card);border:2px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden}
+.faq-q{width:100%;display:flex;align-items:center;gap:12px;background:none;border:none;text-align:left;padding:16px 18px;font-family:var(--fd);font-weight:600;font-size:.98rem;color:var(--ink);cursor:pointer}
+.faq-q .caret{margin-left:auto;transition:.25s;color:var(--primary)}
+.faq-item.open .caret{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{padding:0 18px 16px;color:var(--ink-soft);font-weight:500;font-size:.9rem;line-height:1.65}
+.faq-item.open .faq-a{max-height:320px}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1000px;margin:0 auto 24px}
+.c-card{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:20px;text-align:center}
+.c-card .ico{font-size:1.8rem;margin-bottom:8px}
+.c-card h4{font-size:1rem;margin-bottom:4px}
+.c-card p{font-size:.86rem;color:var(--ink-soft);font-weight:600;line-height:1.55}
+.contact-cta{text-align:center}
+
+/* ---------- footer ---------- */
+.footer-wave{display:block;width:100%;height:64px;margin-bottom:-2px}
+footer{background:var(--primary-deep);color:#F7EAF7;padding:40px 20px 20px}
+.f-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px}
+.f-grid h4{color:#FFD98E;margin-bottom:12px;font-size:1rem}
+.f-grid p,.f-grid a{color:#EDD9F2;font-size:.88rem;font-weight:500;text-decoration:none;line-height:1.9}
+.f-grid a:hover{color:#fff;text-decoration:underline}
+.f-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.f-brand b{font-family:var(--fd);font-size:1.2rem;color:#fff}
+.f-bottom{max-width:1100px;margin:26px auto 0;border-top:2px dashed rgba(255,255,255,.25);padding-top:16px;text-align:center;font-size:.82rem;font-weight:600;color:#E3C8EE}
+
+/* ---------- cart drawer ---------- */
+.overlay{position:fixed;inset:0;background:rgba(74,45,86,.45);opacity:0;pointer-events:none;transition:.25s;z-index:80}
+.overlay.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100dvh;width:min(410px,100vw);background:var(--cream-2);z-index:90;transform:translateX(105%);transition:transform .3s cubic-bezier(.2,.8,.3,1);display:flex;flex-direction:column;box-shadow:-12px 0 40px rgba(74,45,86,.18)}
+.drawer.show{transform:none}
+.d-head{display:flex;align-items:center;gap:10px;padding:16px 18px;border-bottom:2px dashed var(--primary-soft)}
+.d-head h3{font-size:1.15rem}
+.d-head .x{margin-left:auto}
+.x{width:36px;height:36px;border-radius:50%;background:var(--primary-soft-2);border:2px solid var(--primary-soft);color:var(--primary-deep);cursor:pointer;font-size:1rem;font-weight:700}
+.d-items{flex:1;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:12px}
+.cart-empty{text-align:center;color:var(--ink-soft);font-weight:600;padding:50px 10px}
+.cart-empty .big{font-size:3rem;display:block;margin-bottom:8px}
+.c-item{display:flex;gap:12px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px}
+.c-art{width:52px;height:52px;border-radius:12px;display:grid;place-items:center;flex-shrink:0}
+.c-art svg{width:82%}
+.c-info{flex:1;min-width:0}
+.c-info b{font-size:.88rem;display:block}
+.c-col{display:flex;align-items:center;gap:6px;font-size:.75rem;color:var(--ink-soft);font-weight:700;margin:3px 0}
+.c-col i{width:12px;height:12px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.qty{display:inline-flex;align-items:center;gap:8px}
+.qty button{width:26px;height:26px;border-radius:8px;border:2px solid var(--primary-soft);background:var(--cream-2);color:var(--primary-deep);font-weight:700;cursor:pointer;font-size:.9rem}
+.qty b{min-width:16px;text-align:center}
+.c-right{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.c-right span{font-family:var(--fd);font-weight:700;color:var(--primary-deep)}
+.c-del{background:none;border:none;cursor:pointer;opacity:.55;font-size:.95rem}
+.c-del:hover{opacity:1}
+.d-foot{border-top:2px dashed var(--primary-soft);padding:14px 18px 18px}
+.d-note{font-size:.75rem;color:var(--ink-soft);font-weight:600;margin:6px 0 12px}
+.subrow{display:flex;justify-content:space-between;font-family:var(--fd);font-weight:700;font-size:1.05rem;margin-bottom:12px}
+
+/* ---------- modals ---------- */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:16px}
+.modal.show{display:flex}
+.modal .backdrop{position:absolute;inset:0;background:rgba(74,45,86,.5)}
+.m-panel{position:relative;background:var(--cream-2);border-radius:24px;width:min(680px,96vw);max-height:92dvh;overflow:auto;padding:22px 22px 26px;animation:mfade .22s ease}
+@keyframes mfade{from{transform:scale(.96);opacity:.5}}
+.m-head{display:flex;align-items:center;margin-bottom:16px}
+.m-head h3{font-size:1.25rem}
+.m-head .x{margin-left:auto}
+.sumbox{background:var(--primary-soft-2);border:2px solid var(--primary-soft);border-radius:16px;padding:14px 16px;margin-bottom:18px}
+.sumbox h4{font-size:.95rem;margin-bottom:8px}
+.sumbox ul{list-style:none;margin-bottom:10px}
+.sumbox li{display:flex;justify-content:space-between;gap:10px;font-size:.85rem;font-weight:600;padding:3px 0;color:var(--ink-soft)}
+.sumbox li b{color:var(--ink)}
+.sumrow{display:flex;justify-content:space-between;font-weight:700;font-size:.9rem;padding:3px 0;color:var(--ink-soft)}
+.sumrow.total{font-family:var(--fd);font-size:1.05rem;color:var(--primary-deep);border-top:2px dashed var(--primary-soft);padding-top:8px;margin-top:4px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:700;font-size:.8rem;margin-bottom:6px;color:var(--ink)}
+.field input,.field select,.field textarea{width:100%;padding:11px 14px;border-radius:14px;border:2px solid var(--line);background:#fff;font-family:var(--fb);font-weight:600;font-size:.92rem;color:var(--ink);outline:none;transition:.2s}
+.field textarea{resize:vertical;min-height:70px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-soft-2)}
+.field input.bad,.field select.bad{border-color:var(--red);background:#FFF6F4}
+.ferr{display:block;color:var(--red);font-size:.74rem;font-weight:700;margin-top:4px;min-height:0}
+.bkash-box{background:#FDEBF3;border:2px solid #F7C4DC;border-radius:16px;padding:14px 16px;margin:4px 0 16px}
+.bkash-box .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.bkash-box p{font-size:.82rem;color:#8A4A64;font-weight:600;margin-top:8px;line-height:1.55}
+.warn{background:#FFF3E0;border:2px dashed var(--gold);color:#8A6210;border-radius:14px;padding:10px 14px;font-size:.82rem;font-weight:700;margin-bottom:14px;line-height:1.5}
+.success{text-align:center;padding:16px 6px}
+.success .big{font-size:3.4rem;display:block;margin-bottom:6px}
+.success h3{font-size:1.4rem;margin-bottom:8px}
+.success p{color:var(--ink-soft);font-weight:600;font-size:.92rem;line-height:1.65;max-width:420px;margin:0 auto 16px}
+.success .tag{display:inline-block;background:var(--primary-soft-2);border:2px dashed var(--primary-soft);color:var(--primary-deep);font-family:var(--fd);font-weight:700;padding:8px 18px;border-radius:999px;margin-bottom:16px}
+.success-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.link-btn{background:none;border:none;color:var(--ink-soft);font-weight:700;cursor:pointer;text-decoration:underline;font-size:.85rem}
+
+/* ---------- palette ---------- */
+.pal-btn{position:fixed;left:16px;bottom:16px;z-index:70;width:54px;height:54px;border-radius:50%;background:var(--cream-2);border:2px dashed var(--primary);font-size:1.5rem;cursor:pointer;box-shadow:var(--shadow)}
+.pal-panel{position:fixed;left:16px;bottom:82px;z-index:95;background:var(--cream-2);border:2px solid var(--primary-soft);border-radius:18px;padding:14px;width:240px;box-shadow:var(--shadow);display:none}
+.pal-panel.show{display:block}
+.pal-panel h4{font-size:.9rem;margin-bottom:8px}
+.pal-opt{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border-radius:12px;border:none;background:transparent;cursor:pointer;font-weight:700;font-size:.86rem;color:var(--ink)}
+.pal-opt:hover{background:var(--primary-soft-2)}
+.pal-opt.on{background:var(--primary-soft-2);box-shadow:inset 0 0 0 2px var(--primary-soft)}
+.pal-opt .dots{display:flex}
+.pal-opt .dot{width:17px;height:17px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.10)}
+.pal-opt .dot+.dot{margin-left:-6px}
+.pal-opt .tick{margin-left:auto;font-weight:800;color:var(--primary)}
+
+/* ---------- toast / lightbox ---------- */
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(12px);background:var(--ink);color:#FFF9EF;padding:11px 22px;border-radius:999px;font-weight:700;font-size:.9rem;z-index:140;opacity:0;pointer-events:none;transition:.25s;box-shadow:0 10px 26px rgba(0,0,0,.25);text-align:center;max-width:88vw}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.lightbox{position:fixed;inset:0;z-index:150;background:rgba(40,20,48,.8);display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+.lightbox.show{display:flex}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:18px;border:5px solid #fff}
+
+/* ---------- responsive ---------- */
+@media (max-width:940px){
+  .nav-links{display:none}
+  .burger{display:grid}
+  .hero{grid-template-columns:1fr;text-align:center;padding-top:36px}
+  .hero p.lead{margin:0 auto}
+  .cta-row,.hero-stats{justify-content:center}
+  .hero-art{order:-1}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .p-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+  .fgrid{grid-template-columns:1fr}
+  section{padding:46px 16px}
+  .f-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto}
+}
+</style>
+</head>
+<body data-theme="rapunzel">
+
+<div class="announce">✨ Handmade crochet from Narayanganj · Delivery all over Bangladesh · bKash 01533964171 ✨</div>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="logo">
+      <svg width="44" height="44" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M15 12 L18 5 L21.5 10 L24 4 L26.5 10 L30 5 L33 12 Z" fill="#F272B0" stroke="rgba(0,0,0,.08)"/>
+        <circle cx="24" cy="28" r="15" fill="#F6B71E" stroke="rgba(0,0,0,.08)"/>
+        <path d="M11 24 Q24 17 37 25 M10.5 31 Q24 24 37.5 31 M15 38.5 Q25 32 34 37" stroke="#FFF6DE" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <path d="M36 15 Q45 20 41 30" stroke="#8E4CA4" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-txt"><b>Run by Yarn</b><span>AMR PAGE · NARAYANGANJ</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#top">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#how">How to Order</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="icon-btn" id="paletteBtn2" title="Change theme colours" aria-label="Change theme colours">🎨</button>
+    <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+      🧺
+      <span class="badge-n" id="cartCount" style="display:none">0</span>
+    </button>
+    <button class="icon-btn burger" id="burgerBtn" aria-label="Menu">☰</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#top">Home</a><a href="#shop">Shop</a><a href="#how">How to Order</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div>
+      <span class="hero-badge">🧶 100% Handmade Crochet · Narayanganj</span>
+      <h1>Tangled up in <span class="hl">Yarn</span>,<br>just like Rapunzel 💜</h1>
+      <p class="lead">Welcome to <b>Run by Yarn</b> — a tiny home studio where every princess, plushy & hair prettie is crocheted stitch by stitch. Pick your own colours, fill your basket, and we'll make it just for you!</p>
+      <div class="cta-row">
+        <a href="#shop" class="btn">Shop the Collection 🎀</a>
+        <a href="#how" class="btn ghost">How to Order 💬</a>
+      </div>
+      <div class="hero-stats">
+        <span>⭐ 500+ happy heads</span>
+        <span>🚚 Delivery all over BD</span>
+        <span>🎨 Custom colours free</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="mini-yarn" style="top:-4px;left:4%" width="52" height="52" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="26" r="15" fill="#F272B0"/><path d="M12 22 Q24 16 36 24 M12 30 Q24 24 36 31" stroke="#FFE3F0" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M35 13 Q43 18 40 27" stroke="#8E4CA4" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <svg class="mini-yarn" style="bottom:6%;left:0" width="40" height="40" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="26" r="15" fill="#57B33E"/><path d="M12 22 Q24 16 36 24 M12 30 Q24 24 36 31" stroke="#DFF3D8" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M35 13 Q43 18 40 27" stroke="#F6B71E" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="doll-wrap">
+        <svg viewBox="0 0 380 400" role="img" aria-label="Crochet Rapunzel doll with golden braid and purple dress">
+          <defs>
+            <pattern id="cro" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="6.5" cy="6.5" r="2.1" fill="rgba(0,0,0,.05)"/></pattern>
+            <clipPath id="heroClip"><circle cx="190" cy="200" r="174"/></clipPath>
+          </defs>
+          <circle cx="190" cy="200" r="178" fill="#FFFDF4" style="stroke:var(--primary)" stroke-width="7"/>
+          <g clip-path="url(#heroClip)">
+            <!-- hair main -->
+            <circle cx="185" cy="140" r="86" fill="#F6B71E" stroke="rgba(0,0,0,.06)"/>
+            <circle cx="185" cy="140" r="86" fill="url(#cro)"/>
+            <path d="M104 150 Q94 186 76 200 L92 216 Q116 192 120 156 Z" fill="#F6B71E" stroke="rgba(0,0,0,.05)"/>
+            <!-- head -->
+            <circle cx="172" cy="152" r="58" fill="#ECC49C" stroke="rgba(0,0,0,.05)"/>
+            <path d="M114 152 A58 58 0 0 1 230 152 Z" fill="#F6B71E" stroke="rgba(0,0,0,.05)"/>
+            <path d="M114 152 A58 58 0 0 1 230 152 Z" fill="url(#cro)"/>
+            <path d="M150 112 Q160 103 172 110 M170 104 Q184 99 194 110 M134 129 Q146 118 158 125" stroke="#E89B0C" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- bow -->
+            <g stroke="rgba(0,0,0,.08)">
+              <circle cx="118" cy="96" r="15" fill="#F26FB4"/>
+              <circle cx="146" cy="90" r="15" fill="#F26FB4"/>
+              <circle cx="132" cy="94" r="8" fill="#E1519B"/>
+            </g>
+            <!-- neck -->
+            <rect x="160" y="204" width="24" height="18" rx="6" fill="#ECC49C"/>
+            <!-- dress -->
+            <path d="M122 236 Q172 216 222 236 L240 336 Q172 360 104 336 Z" fill="#A64CA6" stroke="rgba(0,0,0,.07)"/>
+            <path d="M122 236 Q172 216 222 236 L240 336 Q172 360 104 336 Z" fill="url(#cro)"/>
+            <path d="M132 300 Q172 316 212 300" stroke="rgba(255,255,255,.3)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 7"/>
+            <circle cx="120" cy="238" r="17" fill="#A64CA6" stroke="rgba(0,0,0,.07)"/>
+            <circle cx="224" cy="238" r="17" fill="#A64CA6" stroke="rgba(0,0,0,.07)"/>
+            <path d="M106 244 A17 17 0 0 1 134 242" stroke="#F7A8C6" stroke-width="4" fill="none"/>
+            <path d="M210 242 A17 17 0 0 1 238 244" stroke="#F7A8C6" stroke-width="4" fill="none"/>
+            <path d="M158 252 L186 272 M186 252 L158 272 M158 274 L186 294 M186 274 L158 294" stroke="#F7A8C6" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="156" cy="218" r="7" fill="#FFF7EA" stroke="rgba(0,0,0,.06)"/>
+            <circle cx="172" cy="213" r="7" fill="#FFF7EA" stroke="rgba(0,0,0,.06)"/>
+            <circle cx="188" cy="218" r="7" fill="#FFF7EA" stroke="rgba(0,0,0,.06)"/>
+            <!-- arms -->
+            <path d="M120 242 Q112 272 128 300" stroke="#ECC49C" stroke-width="17" fill="none" stroke-linecap="round"/>
+            <path d="M224 242 Q232 272 216 300" stroke="#ECC49C" stroke-width="17" fill="none" stroke-linecap="round"/>
+            <!-- right hair lock + braid -->
+            <path d="M226 150 Q238 186 262 206 L246 222 Q220 198 212 156 Z" fill="#F6B71E" stroke="rgba(0,0,0,.05)"/>
+            <g fill="#F2A81D" stroke="rgba(0,0,0,.07)">
+              <circle cx="262" cy="212" r="26"/>
+              <circle cx="270" cy="248" r="27"/>
+              <circle cx="262" cy="284" r="27"/>
+              <circle cx="270" cy="320" r="26"/>
+              <circle cx="260" cy="352" r="22"/>
+            </g>
+            <g fill="url(#cro)">
+              <circle cx="262" cy="212" r="26"/><circle cx="270" cy="248" r="27"/><circle cx="262" cy="284" r="27"/><circle cx="270" cy="320" r="26"/><circle cx="260" cy="352" r="22"/>
+            </g>
+            <rect x="246" y="306" width="48" height="12" rx="6" fill="#FFF7EA" stroke="rgba(0,0,0,.06)"/>
+            <rect x="248" y="344" width="44" height="11" rx="5.5" fill="#FFF7EA" stroke="rgba(0,0,0,.06)"/>
+            <!-- green flower on braid -->
+            <g stroke="rgba(0,0,0,.08)">
+              <circle cx="258" cy="229" r="13" fill="#57B33E"/>
+              <circle cx="272.3" cy="239.4" r="13" fill="#57B33E"/>
+              <circle cx="266.8" cy="256.1" r="13" fill="#57B33E"/>
+              <circle cx="249.2" cy="256.1" r="13" fill="#57B33E"/>
+              <circle cx="243.7" cy="239.4" r="13" fill="#57B33E"/>
+              <circle cx="258" cy="244" r="8" fill="#3E8F2A"/>
+            </g>
+            <!-- heart doodle -->
+            <path d="M305 175 C295 165 292 154 299 149 C304 145 309 149 308 154 C310 148 317 147 320 153 C323 160 315 168 305 175 Z" fill="none" style="stroke:var(--primary)" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M330 190 L338 182 M332 205 L342 204" style="stroke:var(--primary)" stroke-width="5" stroke-linecap="round"/>
+            <!-- sparkle -->
+            <path d="M114 282 L114 296 M107 289 L121 289" stroke="#F6B71E" stroke-width="4" stroke-linecap="round"/>
+            <path d="M140 246 L140 254 M136 250 L144 250" stroke="#F6B71E" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <circle cx="190" cy="200" r="178" fill="none" style="stroke:var(--primary)" stroke-width="7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <span class="chip">💜 <span><b>Handmade</b> with love</span></span>
+    <span class="chip">💵 <span><b>Cash on delivery</b> + bKash</span></span>
+    <span class="chip">🚚 <span>Delivery <b>all over BD</b></span></span>
+    <span class="chip">🎨 <span><b>Your colours</b>, your way</span></span>
+  </div>
+
+  <!-- ============ SHOP ============ -->
+  <section id="shop">
+    <div class="sec-head">
+      <h2 class="sec-title">The Yarn <span class="em">Shoppe</span> 🧺</h2>
+      <svg class="squig" viewBox="0 0 120 12"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T118 8" fill="none" style="stroke:var(--gold)" stroke-width="3" stroke-linecap="round"/></svg>
+      <p class="sec-sub">Pick a category, choose your colour on each card, then add to your basket!</p>
+    </div>
+    <div class="tabs" id="shopTabs">
+      <button class="tab on" data-cat="all">✨ Everything</button>
+      <button class="tab" data-cat="clips">🎀 Hair Clips &amp; Claws</button>
+      <button class="tab" data-cat="buns">🍩 Hair Buns</button>
+      <button class="tab" data-cat="keys">🔑 Keychains</button>
+      <button class="tab" data-cat="dolls">🧸 Small Dolls</button>
+      <button class="tab" data-cat="plushies">💜 Plushy Characters</button>
+    </div>
+    <p class="shop-note">🚚 Delivery: Narayanganj ৳60 · Dhaka ৳100 · Outside ৳130 &nbsp;—&nbsp; every piece can be re-coloured just for you 🎨</p>
+    <div id="shopSegments"></div>
+  </section>
+
+  <!-- ============ HOW TO ORDER ============ -->
+  <section id="how" style="background:var(--primary-soft-2)">
+    <div class="sec-head">
+      <h2 class="sec-title">How to <span class="em">Order</span> 📝</h2>
+      <svg class="squig" viewBox="0 0 120 12"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T118 8" fill="none" style="stroke:var(--gold)" stroke-width="3" stroke-linecap="round"/></svg>
+      <p class="sec-sub">Four cozy little steps and your cutie is on its way!</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h4>🧺 Fill your basket</h4><p>Browse the segments, tap your favourite colour on each card and press <b>Add to Cart</b>.</p></div>
+      <div class="step"><div class="num">2</div><h4>📝 Place your order</h4><p>Open the cart, press <b>Place Order</b> and fill in the order form with your details &amp; address.</p></div>
+      <div class="step"><div class="num">3</div><h4>💜 Send bKash delivery fee</h4><p>Send <b>only the delivery charge</b> via bKash to <b>01533964171</b>, then enter the TrxID + your bKash number in the form. Orders without bKash proof cannot be placed!</p></div>
+      <div class="step"><div class="num">4</div><h4>📦 Receive at your door</h4><p>We crochet, pack with love and courier your parcel. Pay the remaining amount <b>cash on delivery</b>. 🥰</p></div>
+    </div>
+    <div class="del-grid">
+      <div class="del-card" style="background:#FDEEF5"><div class="fee">৳60</div><h4>🛺 Narayanganj</h4><p>Hand-delivered, same or next day.</p></div>
+      <div class="del-card" style="background:#F3ECFA"><div class="fee">৳100</div><h4>🚌 Dhaka</h4><p>1–2 days inside Dhaka city.</p></div>
+      <div class="del-card" style="background:#EAF4FB"><div class="fee">৳130</div><h4>🚚 Outside Dhaka</h4><p>2–4 days via Sundarban / Steadfast.</p></div>
+      <div class="del-card bkash-card">
+        <div class="bk-top">
+          <span class="bkash-logo">bKash</span>
+          <span class="bk-num" id="bkNum1">01533964171</span>
+          <button class="copy-btn copy-bkash" type="button">📋 Copy Number</button>
+        </div>
+        <p>💜 Send the <b>delivery charge only</b> by bKash (Send Money) to <b>01533964171</b>. Copy the <b>Transaction ID (TrxID)</b> into the order form with the bKash number you sent from — that is your proof. The product amount is paid on delivery (COD). Orders without valid bKash proof will <b>not</b> be placed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews">
+    <div class="sec-head">
+      <h2 class="sec-title">Love <span class="em">Letters</span> 💌</h2>
+      <svg class="squig" viewBox="0 0 120 12"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T118 8" fill="none" style="stroke:var(--gold)" stroke-width="3" stroke-linecap="round"/></svg>
+      <p class="sec-sub">Real reviews from real customers — tap a photo to see it bigger!</p>
+    </div>
+    <div class="rev-grid" id="revGrid"></div>
+    <div class="rev-cta"><button class="btn" id="writeRevBtn">✍️ Write a Review</button></div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" style="background:var(--primary-soft-2)">
+    <div class="sec-head">
+      <h2 class="sec-title">Cosy <span class="em">Questions</span> 🤔</h2>
+      <svg class="squig" viewBox="0 0 120 12"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T118 8" fill="none" style="stroke:var(--gold)" stroke-width="3" stroke-linecap="round"/></svg>
+    </div>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q">🧶 Are the products really handmade?<span class="caret">▾</span></button><div class="faq-a"><p>Yes! Every single piece is crocheted by hand in our little Narayanganj home studio — no machines, no mass production. Small differences make each one uniquely yours. 💜</p></div></div>
+      <div class="faq-item"><button class="faq-q">🎨 Can I choose my own colours?<span class="caret">▾</span></button><div class="faq-a"><p>Of course! Every product card has colour swatches — pick your favourite and it's added to the cart with that colour. You can also write special colour requests in the order form notes. You can even change this website's colours with the 🎨 button at the bottom-left!</p></div></div>
+      <div class="faq-item"><button class="faq-q">💜 Why do I pay the delivery charge by bKash first?<span class="caret">▾</span></button><div class="faq-a"><p>The bKash delivery fee confirms your order and covers courier cost, so serious orders only. You pay the rest in cash when your parcel arrives. Please keep your TrxID — orders without valid bKash proof (TrxID + sender number) cannot be placed.</p></div></div>
+      <div class="faq-item"><button class="faq-q">⏰ How long does delivery take?<span class="caret">▾</span></button><div class="faq-a"><p>Narayanganj: same or next day hand delivery (৳60). Dhaka: 1–2 days (৳100). Outside Dhaka: 2–4 days by courier (৳130). Custom-colour or made-to-order pieces may need 3–7 extra days — we'll always tell you first!</p></div></div>
+      <div class="faq-item"><button class="faq-q">🫧 How do I care for my crochet cuties?<span class="caret">▾</span></button><div class="faq-a"><p>Spot-clean with mild soap and cold water, pat dry, and keep away from fire &amp; hungry pets. Fluff them gently and they'll stay adorable for years! 🧸</p></div></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="sec-head">
+      <h2 class="sec-title">Find Us in <span class="em">Narayanganj</span> 📍</h2>
+      <svg class="squig" viewBox="0 0 120 12"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T118 8" fill="none" style="stroke:var(--gold)" stroke-width="3" stroke-linecap="round"/></svg>
+      <p class="sec-sub">Our little home studio — orders open every day!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="c-card"><div class="ico">📍</div><h4>Location</h4><p>Narayanganj, Bangladesh<br>Home-based crochet studio</p></div>
+      <div class="c-card"><div class="ico">💟</div><h4>bKash</h4><p>01533964171<br><button class="copy-btn copy-bkash" type="button" style="margin-top:8px">📋 Copy Number</button></p></div>
+      <div class="c-card"><div class="ico">⏰</div><h4>Order Hours</h4><p>Every day, 9:00 AM – 10:00 PM<br>We reply super fast 💌</p></div>
+      <div class="c-card"><div class="ico">🎀</div><h4>Custom Orders</h4><p>Want a character we don't have?<br>Tell us in the order notes!</p></div>
+    </div>
+    <div class="contact-cta"><a class="btn" href="https://wa.me/8801533964171?text=Hi%20Run%20by%20Yarn!%20%F0%9F%92%9C" target="_blank" rel="noopener">💬 Chat with Us on WhatsApp</a></div>
+  </section>
+</main>
+
+<svg class="footer-wave" viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 50 Q120 8 240 45 T480 45 T720 45 T960 45 T1200 45 T1440 45 L1440 90 L0 90 Z" style="fill:var(--primary-deep)"/></svg>
+<footer>
+  <div class="f-grid">
+    <div>
+      <div class="f-brand">
+        <svg width="38" height="38" viewBox="0 0 48 48"><path d="M15 12 L18 5 L21.5 10 L24 4 L26.5 10 L30 5 L33 12 Z" fill="#F272B0"/><circle cx="24" cy="28" r="15" fill="#F6B71E"/><path d="M11 24 Q24 17 37 25 M10.5 31 Q24 24 37.5 31" stroke="#FFF6DE" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+        <b>Run by Yarn</b>
+      </div>
+      <p>Amr page — a tiny crochet corner in Narayanganj. Every stitch is made with love, just for you. 💜</p>
+    </div>
+    <div>
+      <h4>🧶 Explore</h4>
+      <p><a href="#shop">Shop All</a><br><a href="#how">How to Order</a><br><a href="#reviews">Reviews</a><br><a href="#faq">FAQ</a></p>
+    </div>
+    <div>
+      <h4>🚚 Delivery</h4>
+      <p>Narayanganj — ৳60<br>Dhaka — ৳100<br>Outside Dhaka — ৳130<br>Product payment: Cash on Delivery</p>
+    </div>
+    <div>
+      <h4>💟 Payments</h4>
+      <p>bKash (delivery fee only)<br><b style="color:#FFD98E">01533964171</b><br>Keep your TrxID safe!</p>
+    </div>
+  </div>
+  <div class="f-bottom">© 2025 Run by Yarn · Amr Page · Handmade with 🧶 &amp; 💜 in Narayanganj, Bangladesh</div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="d-head"><h3>🧺 Your Yarn Basket</h3><button class="x" data-closecart aria-label="Close cart">✕</button></div>
+  <div class="d-items" id="cartItems"></div>
+  <div class="d-foot">
+    <div class="subrow"><span>Subtotal</span><span id="cartSubtotal">৳0</span></div>
+    <p class="d-note">🚚 Delivery: ৳60 Narayanganj · ৳100 Dhaka · ৳130 Outside — chosen at checkout. Delivery fee is paid via bKash upfront.</p>
+    <button class="btn wide" id="checkoutBtn">Place Order 📝</button>
+  </div>
+</aside>
+
+<!-- ============ CHECKOUT MODAL ============ -->
+<div class="modal" id="coModal">
+  <div class="backdrop" data-closemodal></div>
+  <div class="m-panel">
+    <div class="m-head"><h3>📝 Place Your Order</h3><button class="x" data-closemodal aria-label="Close">✕</button></div>
+    <div id="coBody">
+      <div class="sumbox">
+        <h4>🧺 Your Yarn Basket</h4>
+        <ul id="sumList"></ul>
+        <div class="sumrow"><span>Subtotal</span><b id="sumSub">৳0</b></div>
+        <div class="sumrow"><span>Delivery <em id="sumAreaName"></em></span><b id="sumDel">৳0</b></div>
+        <div class="sumrow total"><span>Total (rest = cash on delivery)</span><b id="sumTotal">৳0</b></div>
+      </div>
+      <form id="orderForm" novalidate>
+        <div class="fgrid">
+          <div class="field"><label for="fName">Full Name *</label><input id="fName" type="text" placeholder="e.g. Nusrat Jahan" autocomplete="name"><small class="ferr" id="fNameErr"></small></div>
+          <div class="field"><label for="fPhone">Phone Number *</label><input id="fPhone" type="tel" inputmode="numeric" placeholder="01XXXXXXXXX" autocomplete="tel"><small class="ferr" id="fPhoneErr"></small></div>
+        </div>
+        <div class="field"><label for="fAddress">Full Delivery Address *</label><input id="fAddress" type="text" placeholder="House / road / area, thana, district"><small class="ferr" id="fAddressErr"></small></div>
+        <div class="field"><label for="fArea">Delivery Area * (sets your delivery fee)</label>
+          <select id="fArea">
+            <option value="nwg">Narayanganj — ৳60</option>
+            <option value="dhaka">Dhaka — ৳100</option>
+            <option value="outside">Outside Dhaka — ৳130</option>
+          </select><small class="ferr" id="fAreaErr"></small>
+        </div>
+        <div class="bkash-box">
+          <div class="row">
+            <span class="bkash-logo">bKash</span>
+            <span class="bk-num">01533964171</span>
+            <button class="copy-btn copy-bkash" type="button">📋 Copy</button>
+          </div>
+          <p>💙 <b>Send the delivery charge only</b> (<span id="bkashAmt">৳60</span>) via bKash <b>Send Money</b> to <b>01533964171</b> right now, then fill the proof below. Product amount is paid on delivery.</p>
+        </div>
+        <div class="fgrid">
+          <div class="field"><label for="fTrx">bKash Transaction ID (TrxID) *</label><input id="fTrx" type="text" placeholder="e.g. 9F7HKD2L1X" autocomplete="off"><small class="ferr" id="fTrxErr"></small></div>
+          <div class="field"><label for="fBkash">bKash Number (sent from) *</label><input id="fBkash" type="tel" inputmode="numeric" placeholder="01XXXXXXXXX"><small class="ferr" id="fBkashErr"></small></div>
+        </div>
+        <div class="field"><label for="fNote">🎨 Colour requests / custom notes (optional)</label><textarea id="fNote" placeholder="e.g. Make the bunny in mint green with a pink bow!"></textarea><small class="ferr" id="fNoteErr"></small></div>
+        <p class="warn">⚠️ Orders without valid bKash proof (TrxID + sender number) will <b>not</b> be placed. Your order details go directly to the owner. 💜</p>
+        <button class="btn wide" id="placeBtn" type="submit">Place Order 💜</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ============ REVIEW MODAL ============ -->
+<div class="modal" id="revModal">
+  <div class="backdrop" data-closemodal></div>
+  <div class="m-panel" style="width:min(560px,96vw)">
+    <div class="m-head"><h3>💌 Share the Love</h3><button class="x" data-closemodal aria-label="Close">✕</button></div>
+    <form class="rev-form" id="revForm" novalidate>
+      <div class="fgrid">
+        <div class="field"><label for="rName">Your Name *</label><input id="rName" type="text" placeholder="e.g. Nusrat"><small class="ferr" id="rNameErr"></small></div>
+        <div class="field"><label for="rCity">Your City / Area</label><input id="rCity" type="text" placeholder="e.g. Dhaka"></div>
+      </div>
+      <div class="field"><label for="rProduct">What did you get?</label>
+        <select id="rProduct"><option value="">Just the shop overall 💜</option></select>
+      </div>
+      <div class="field"><label>Your Rating *</label>
+        <div class="star-row" id="starRow">
+          <button type="button" class="star-btn on">★</button><button type="button" class="star-btn on">★</button><button type="button" class="star-btn on">★</button><button type="button" class="star-btn on">★</button><button type="button" class="star-btn on">★</button>
+        </div>
+      </div>
+      <div class="field"><label for="rText">Your Review *</label><textarea id="rText" placeholder="How was your yarn cutie? We'd love to know! 💜"></textarea><small class="ferr" id="rTextErr"></small></div>
+      <div class="field"><label for="revPhoto">📷 Product Photo (optional — makes it extra cute!)</label><input id="revPhoto" type="file" accept="image/*" style="padding:9px">
+        <div class="photo-prev" id="revPrev"><img alt="Photo preview"><button type="button" id="revPrevDel" aria-label="Remove photo">✕</button></div>
+      </div>
+      <button class="btn wide" type="submit">Post My Review 💜</button>
+    </form>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox"><img id="lightboxImg" alt="Customer photo"></div>
+
+<!-- ============ THEME PALETTE ============ -->
+<button class="pal-btn" id="paletteBtn" title="Pick your colours" aria-label="Pick theme colours">🎨</button>
+<div class="pal-panel" id="palPanel">
+  <h4>🎨 Pick your colours!</h4>
+  <button class="pal-opt on" data-theme="rapunzel"><span class="dots"><span class="dot" style="background:#8E4CA4"></span><span class="dot" style="background:#F6B71E"></span></span>Rapunzel<span class="tick">✓</span></button>
+  <button class="pal-opt" data-theme="rose"><span class="dots"><span class="dot" style="background:#E5639E"></span><span class="dot" style="background:#F6B71E"></span></span>Rose Garden<span class="tick">✓</span></button>
+  <button class="pal-opt" data-theme="meadow"><span class="dots"><span class="dot" style="background:#4FA36A"></span><span class="dot" style="background:#F6B71E"></span></span>Meadow<span class="tick">✓</span></button>
+  <button class="pal-opt" data-theme="sky"><span class="dots"><span class="dot" style="background:#5FA8DC"></span><span class="dot" style="background:#F6B71E"></span></span>Sky Day<span class="tick">✓</span></button>
+  <button class="pal-opt" data-theme="honey"><span class="dots"><span class="dot" style="background:#E09A1F"></span><span class="dot" style="background:#8E4CA4"></span></span>Honey Sun<span class="tick">✓</span></button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* =====================================================
+   RUN BY YARN — shop engine
+   OWNER NOTE: to add a new product, just copy a line in
+   PRODUCTS below (id, name, category, price, art type,
+   description, colour list). Everything else updates
+   automatically. 💜
+===================================================== */
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const money = n => '৳' + n;
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function load(k, d){ try{ const v = JSON.parse(localStorage.getItem(k)); return v ?? d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+
+/* ---------------- yarn colours ---------------- */
+const YARN = [
+  {id:'yellow', name:'Sunny Yellow',  hex:'#F6B71E'},
+  {id:'gold',   name:'Honey Gold',    hex:'#E89B0C'},
+  {id:'pink',   name:'Blush Pink',    hex:'#F272B0'},
+  {id:'rose',   name:'Deep Rose',     hex:'#E5526B'},
+  {id:'purple', name:'Royal Purple',  hex:'#A64CA6'},
+  {id:'lilac',  name:'Soft Lilac',    hex:'#C79BE0'},
+  {id:'green',  name:'Leaf Green',    hex:'#57B33E'},
+  {id:'mint',   name:'Mint',          hex:'#8FD9B6'},
+  {id:'sky',    name:'Sky Blue',      hex:'#7CC3E8'},
+  {id:'navy',   name:'Midnight Blue', hex:'#4A5D9E'},
+  {id:'red',    name:'Cherry Red',    hex:'#E2483D'},
+  {id:'orange', name:'Tangerine',     hex:'#F28C28'},
+  {id:'cream',  name:'Cream',         hex:'#F5E6CF'},
+  {id:'white',  name:'Snow White',    hex:'#FFFFFF'},
+  {id:'brown',  name:'Cocoa Bear',    hex:'#9C6B45'}
+];
+const yarn = id => YARN.find(y => y.id === id) || YARN[0];
+const ACCENT = {yellow:'#A64CA6',gold:'#F272B0',pink:'#A64CA6',rose:'#F6B71E',purple:'#F6B71E',lilac:'#F272B0',green:'#F6B71E',blue:'#F6B71E',sky:'#F6B71E',navy:'#F6B71E',red:'#F6B71E',orange:'#7CC3E8',cream:'#F272B0',white:'#F272B0',brown:'#F5E6CF',mint:'#F272B0'};
+
+/* ---------------- crochet SVG art ---------------- */
+const ringAt = (x,y,stem) => `<circle cx="${x}" cy="${y}" r="5.5" fill="none" stroke="#C9B79F" stroke-width="3"/><path d="M${x} ${y+5.5} L${x} ${y+5.5+stem}" stroke="#9C8465" stroke-width="3" stroke-linecap="round"/>`;
+const mFl = (x,y,c) => `<circle cx="${x}" cy="${y-4.4}" r="3.1" fill="${c}"/><circle cx="${x+4.4}" cy="${y}" r="3.1" fill="${c}"/><circle cx="${x}" cy="${y+4.4}" r="3.1" fill="${c}"/><circle cx="${x-4.4}" cy="${y}" r="3.1" fill="${c}"/><circle cx="${x}" cy="${y}" r="2.1" fill="#FFF7EA" stroke="rgba(93,58,26,.15)"/>`;
+const S = 'stroke="rgba(93,58,26,.10)"';
+
+const SVG_TPL = {
+  flower:(c1,c2,rg)=>`<svg viewBox="0 0 80 80">${rg?ringAt(40,6,6):''}<g ${S}><circle cx="40" cy="23.5" r="12.5" fill="${c1}"/><circle cx="55.7" cy="34.9" r="12.5" fill="${c1}"/><circle cx="49.7" cy="53.3" r="12.5" fill="${c1}"/><circle cx="30.3" cy="53.3" r="12.5" fill="${c1}"/><circle cx="24.3" cy="34.9" r="12.5" fill="${c1}"/><circle cx="40" cy="40" r="9" fill="${c2}" stroke="rgba(93,58,26,.14)"/></g><circle cx="40" cy="40" r="30" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="1.4" stroke-dasharray="1 6" stroke-linecap="round"/></svg>`,
+  daisy:(c1,c2,rg)=>{let p='';for(let i=0;i<8;i++)p+=`<ellipse cx="40" cy="20.5" rx="3.4" ry="11" fill="${c1}" stroke="rgba(93,58,26,.08)" transform="rotate(${i*45} 40 40)"/>`;return `<svg viewBox="0 0 80 80">${rg?ringAt(40,4.5,3):''}${p}<circle cx="40" cy="40" r="8.5" fill="#F6B71E" stroke="rgba(93,58,26,.15)"/><circle cx="40" cy="40" r="7.6" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.2" stroke-dasharray="1 3.5"/></svg>`},
+  sunflower:(c1,c2,rg)=>{let p='';for(let i=0;i<8;i++)p+=`<ellipse cx="40" cy="21" rx="5" ry="10.5" fill="${c1}" stroke="rgba(93,58,26,.08)" transform="rotate(${i*45} 40 40)"/>`;return `<svg viewBox="0 0 80 80">${rg?ringAt(40,4.5,3):''}${p}<circle cx="40" cy="40" r="11" fill="#7A4A21" stroke="rgba(93,58,26,.15)"/><circle cx="40" cy="40" r="10" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.3" stroke-dasharray="1 4" stroke-linecap="round"/></svg>`},
+  rose:(c1,c2)=>`<svg viewBox="0 0 80 80">${ringAt(40,8,5)}<circle cx="40" cy="47" r="23" fill="${c1}" ${S}/><path d="M40 47 a5 5 0 0 1 9 0 a9 9 0 0 1 -18 0 a13 13 0 0 1 26 0 a17 17 0 0 1 -34 0" fill="none" stroke="rgba(93,58,26,.22)" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="21" cy="64" rx="7" ry="4.5" fill="#57B33E" transform="rotate(-30 21 64)"/><ellipse cx="59" cy="64" rx="7" ry="4.5" fill="#57B33E" transform="rotate(30 59 64)"/></svg>`,
+  heart:(c1,c2,rg)=>`<svg viewBox="0 0 80 80">${rg?ringAt(40,5,15):''}<path d="M40 66 C22 52 12 37 21 26 C28 18 38 21 40 30 C42 21 52 18 59 26 C68 37 58 52 40 66 Z" fill="${c1}" ${S}/><path d="M40 57 C29 47 23 38 28 31 C32 26 38 28 40 33 C42 28 48 26 52 31 C57 38 51 47 40 57 Z" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.6" stroke-dasharray="3 3.5" stroke-linecap="round"/><circle cx="40" cy="71" r="4" fill="${c2}" ${S}/></svg>`,
+  star:(c1,c2)=>`<svg viewBox="0 0 80 80">${ringAt(40,7,5)}<polygon points="40,20 45.9,37.9 64.7,38 49.5,49.1 55.3,67 40,56 24.7,67 30.5,49.1 15.3,38 34.1,37.9" fill="${c1}" ${S} stroke-linejoin="round"/><path d="M33 45 q3 2.6 6 0 M45 45 q3 2.6 6 0 M37 51 q3 2.4 6 0" stroke="#7A5A44" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`,
+  mushroom:(c1,c2)=>`<svg viewBox="0 0 80 80">${ringAt(40,6,4)}<path d="M30 46 Q27 64 32 68 Q40 72 48 68 Q53 64 50 46 Z" fill="#F7EDDD" stroke="rgba(93,58,26,.12)"/><path d="M12 44 Q12 16 40 16 Q68 16 68 44 Q68 49 61 49 L19 49 Q12 49 12 44 Z" fill="${c1}" ${S}/><circle cx="30" cy="30" r="4" fill="${c2}"/><circle cx="47" cy="24" r="3.2" fill="${c2}"/><circle cx="55" cy="36" r="3.6" fill="${c2}"/><circle cx="22" cy="40" r="2.8" fill="${c2}"/></svg>`,
+  clip:(c1,c2)=>`<svg viewBox="0 0 80 80"><path d="M8 52 Q40 8 72 52 L60 52 Q40 24 20 52 Z" fill="${c1}" ${S}/><line x1="20" y1="52" x2="60" y2="52" stroke="rgba(93,58,26,.18)" stroke-width="2.4" stroke-linecap="round"/><circle cx="30" cy="40" r="2.6" fill="${c2}"/><circle cx="40" cy="36" r="2.6" fill="${c2}"/><circle cx="50" cy="40" r="2.6" fill="${c2}"/>${mFl(40,20,c2)}</svg>`,
+  claw:(c1,c2)=>`<svg viewBox="0 0 80 80"><path d="M12 54 A28 28 0 0 1 68 54 L56 54 A16 16 0 0 0 24 54 Z" fill="${c1}" ${S}/><path d="M18 46 A26 26 0 0 1 62 46" fill="none" stroke="${c2}" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round"/><path d="M12 54 L8 64 L19 59 Z" fill="${c1}"/><path d="M68 54 L72 64 L61 59 Z" fill="${c1}"/><circle cx="40" cy="27" r="4" fill="${c2}" ${S}/></svg>`,
+  bun:(c1,c2)=>`<svg viewBox="0 0 80 80"><circle cx="40" cy="46" r="19" fill="none" stroke="${c1}" stroke-width="13"/><circle cx="40" cy="46" r="19" fill="none" stroke="rgba(0,0,0,.10)" stroke-width="1.6" stroke-dasharray="3 4"/>${mFl(23,32,c2)}${mFl(40,25,c2)}${mFl(57,32,c2)}<path d="M34 69 L29 76 M46 69 L51 76" stroke="${c2}" stroke-width="3.5" stroke-linecap="round"/></svg>`,
+  doll:(c1,c2)=>`<svg viewBox="0 0 80 80"><circle cx="58" cy="40" r="5" fill="${c1}"/><circle cx="61" cy="49" r="5" fill="${c1}"/><circle cx="58" cy="57" r="4.5" fill="${c1}"/><circle cx="40" cy="30" r="16" fill="${c1}" ${S}/><circle cx="40" cy="33" r="11" fill="#F0CBA2"/><path d="M29 33 A11 11 0 0 1 51 33 Z" fill="${c1}"/><circle cx="29" cy="20" r="4.5" fill="#F26FB4"/><circle cx="37" cy="18" r="4.5" fill="#F26FB4"/><circle cx="33" cy="19" r="2" fill="#E1519B"/><path d="M31 45 Q40 42 49 45 L53 65 Q40 70 27 65 Z" fill="${c2}" ${S}/><path d="M36 50 L44 56 M44 50 L36 56 M36 57 L44 63 M44 57 L36 63" stroke="#FFF3F8" stroke-width="1.8" stroke-linecap="round"/><path d="M31 47 L26 58 M49 47 L54 58" stroke="#F0CBA2" stroke-width="5" stroke-linecap="round"/></svg>`,
+  plushy:(c1,c2)=>`<svg viewBox="0 0 80 80"><circle cx="23" cy="19" r="7.5" fill="${c1}"/><circle cx="23" cy="19" r="3.8" fill="${c2}"/><circle cx="57" cy="19" r="7.5" fill="${c1}"/><circle cx="57" cy="19" r="3.8" fill="${c2}"/><ellipse cx="40" cy="59" rx="15" ry="12.5" fill="${c1}" ${S}/><ellipse cx="40" cy="61" rx="8.5" ry="7" fill="${c2}"/><circle cx="25" cy="52" r="5.5" fill="${c1}"/><circle cx="55" cy="52" r="5.5" fill="${c1}"/><circle cx="40" cy="31" r="16.5" fill="${c1}" ${S}/><ellipse cx="40" cy="36.5" rx="8.5" ry="6.5" fill="${c2}"/><circle cx="40" cy="34" r="2.5" fill="#6B4A3E"/><path d="M40 36.5 Q40 40 36.5 40.5 M40 36.5 Q40 40 43.5 40.5" stroke="#6B4A3E" stroke-width="1.5" fill="none" stroke-linecap="round"/><circle cx="33" cy="27.5" r="1.9" fill="#4A3B33"/><circle cx="47" cy="27.5" r="1.9" fill="#4A3B33"/></svg>`,
+  bunny:(c1,c2)=>`<svg viewBox="0 0 80 80"><ellipse cx="29" cy="15" rx="5.5" ry="13" fill="${c1}" transform="rotate(-10 29 15)"/><ellipse cx="29" cy="16" rx="2.6" ry="9" fill="${c2}" transform="rotate(-10 29 16)"/><ellipse cx="51" cy="15" rx="5.5" ry="13" fill="${c1}" transform="rotate(10 51 15)"/><ellipse cx="51" cy="16" rx="2.6" ry="9" fill="${c2}" transform="rotate(10 51 16)"/><ellipse cx="40" cy="59" rx="14" ry="12" fill="${c1}" ${S}/><ellipse cx="40" cy="61" rx="8" ry="6.5" fill="#FFF7EE"/><circle cx="26" cy="52" r="5" fill="${c1}"/><circle cx="54" cy="52" r="5" fill="${c1}"/><circle cx="40" cy="32" r="15" fill="${c1}" ${S}/><ellipse cx="40" cy="37" rx="7.5" ry="5.5" fill="#FFF7EE"/><circle cx="40" cy="35" r="2" fill="#E58BB0"/><path d="M40 37 L40 39 M40 39 Q37.5 41 36 39.5 M40 39 Q42.5 41 44 39.5" stroke="#8A6E84" stroke-width="1.4" fill="none" stroke-linecap="round"/><circle cx="33.5" cy="29" r="1.9" fill="#4A3B33"/><circle cx="46.5" cy="29" r="1.9" fill="#4A3B33"/></svg>`,
+  cat:(c1,c2)=>`<svg viewBox="0 0 80 80"><path d="M22 26 L25 10 L36 20 Z" fill="${c1}"/><path d="M26 22 L27.5 15 L32 19.5 Z" fill="${c2}"/><path d="M58 26 L55 10 L44 20 Z" fill="${c1}"/><path d="M54 22 L52.5 15 L48 19.5 Z" fill="${c2}"/><path d="M54 62 Q66 58 61 46" stroke="${c1}" stroke-width="5.5" fill="none" stroke-linecap="round"/><ellipse cx="40" cy="58" rx="14.5" ry="12" fill="${c1}" ${S}/><ellipse cx="40" cy="60" rx="8" ry="6.5" fill="${c2}"/><circle cx="40" cy="31" r="16" fill="${c1}" ${S}/><circle cx="34" cy="29" r="1.9" fill="#4A3B33"/><circle cx="46" cy="29" r="1.9" fill="#4A3B33"/><path d="M38 36 L42 36 L40 39 Z" fill="#E58BB0"/><path d="M40 39 Q40 41.5 37.5 41.5 M40 39 Q40 41.5 42.5 41.5" stroke="#4A3B33" stroke-width="1.4" fill="none" stroke-linecap="round"/><path d="M26 33 L18 31 M26 36 L18 37 M54 33 L62 31 M54 36 L62 37" stroke="rgba(93,58,26,.35)" stroke-width="1.3" stroke-linecap="round"/></svg>`,
+  axo:(c1,c2)=>`<svg viewBox="0 0 80 80"><circle cx="20" cy="26" r="3.4" fill="${c2}"/><circle cx="16" cy="34" r="3.4" fill="${c2}"/><circle cx="19" cy="42" r="3.4" fill="${c2}"/><circle cx="60" cy="26" r="3.4" fill="${c2}"/><circle cx="64" cy="34" r="3.4" fill="${c2}"/><circle cx="61" cy="42" r="3.4" fill="${c2}"/><ellipse cx="40" cy="62" rx="16" ry="11" fill="${c1}" ${S}/><ellipse cx="40" cy="64" rx="9" ry="6" fill="${c2}" opacity=".55"/><ellipse cx="40" cy="36" rx="21" ry="17" fill="${c1}" ${S}/><circle cx="33" cy="33" r="2" fill="#4A3B33"/><circle cx="47" cy="33" r="2" fill="#4A3B33"/><circle cx="29.5" cy="39" r="2.6" fill="#F272B0" opacity=".5"/><circle cx="50.5" cy="39" r="2.6" fill="#F272B0" opacity=".5"/><path d="M35 41 Q40 45 45 41" stroke="#4A3B33" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`
+};
+function art(kind, colorId, ring){
+  const y = yarn(colorId), c2 = ACCENT[y.id] || '#F6B71E';
+  const f = SVG_TPL[kind] || SVG_TPL.flower;
+  return f(y.hex, c2, !!ring);
+}
+
+/* ---------------- catalogue ---------------- */
+const CATS = [
+  {id:'clips',    name:'Hair Clips & Claws', emoji:'🎀', tint:'#FDEEF5', blurb:'Snap clips & claw clips for everyday princess hair'},
+  {id:'buns',     name:'Hair Buns & Wraps',  emoji:'🍩', tint:'#F3ECFA', blurb:'Snuggle your bun in a cosy crochet hug'},
+  {id:'keys',     name:'Keychains & Charms', emoji:'🔑', tint:'#ECF6EC', blurb:'Tiny yarn friends for your bag & keys'},
+  {id:'dolls',    name:'Small Dolls',        emoji:'🧸', tint:'#FDF1E3', blurb:'Palm-sized dolly besties (approx. 12–15 cm)'},
+  {id:'plushies', name:'Plushy Characters',  emoji:'💜', tint:'#EAF4FB', blurb:'Big huggable handmade pals (approx. 25–30 cm)'}
+];
+/* price types: keychain flower 70 · hair bun 150 · plushy 350 · small doll 200 · hair clips pair 50 · claw clip 100 */
+const PRODUCTS = [
+  {id:'clip1', cat:'clips', name:'Flower Snap Clips (Pair)', price:50,  svg:'clip',      ring:false, colors:['pink','purple','yellow','mint','sky','lilac'], desc:'Sweet flower toppers on gentle snap clips — sold as a comfy pair.'},
+  {id:'clip2', cat:'clips', name:'Mini Daisy Clips (Pair)',  price:50,  svg:'daisy',     ring:false, colors:['white','pink','yellow','lilac'],               desc:'Dainty little daisies for a soft meadow look — pair of two.'},
+  {id:'clip3', cat:'clips', name:'Heart Claw Clip',          price:100, svg:'heart',     ring:false, colors:['rose','red','purple','pink'],                  desc:'A squishy crochet heart that grips your hair all day long.'},
+  {id:'clip4', cat:'clips', name:'Bow Claw Clip',            price:100, svg:'claw',      ring:false, colors:['purple','pink','navy','rose'],                 desc:'Classic claw clip with a hand-stitched ribbon stripe.'},
+  {id:'clip5', cat:'clips', name:'Sunflower Claw Clip',      price:100, svg:'sunflower', ring:false, colors:['yellow','orange','gold'],                      desc:'Sunshine on your head — golden petals, cosy stitched centre.'},
+  {id:'clip6', cat:'clips', name:'Pastel Claw Clip',         price:100, svg:'claw',      ring:false, colors:['mint','lilac','sky','cream'],                  desc:'Soft pastel shade with candy stripes. Gentle on little heads!'},
+
+  {id:'bun1', cat:'buns', name:'Classic Bun Wrap',     price:150, svg:'bun', ring:false, colors:['purple','pink','yellow','navy','rose'], desc:'Wraps around your bun for an instant princess updo.'},
+  {id:'bun2', cat:'buns', name:'Flower Garden Bun',    price:150, svg:'bun', ring:false, colors:['cream','lilac','mint','white'],         desc:'Bun wrap blooming with three tiny handmade flowers.'},
+  {id:'bun3', cat:'buns', name:'Princess Bun Crown',   price:150, svg:'bun', ring:false, colors:['gold','purple','rose'],                 desc:'Our Rapunzel-favourite bun wrap in royal shades.'},
+  {id:'bun4', cat:'buns', name:'School-Day Bun',       price:150, svg:'bun', ring:false, colors:['red','navy','green','sky'],             desc:'Neat, sturdy and comfy for busy school mornings.'},
+
+  {id:'key1', cat:'keys', name:'Rose Keychain',        price:70, svg:'rose',      ring:true, colors:['rose','red','pink','white','cream'], desc:'A forever-blooming rose for your bag or keys.'},
+  {id:'key2', cat:'keys', name:'Sunflower Keychain',   price:70, svg:'sunflower', ring:true, colors:['yellow','orange','gold'],            desc:'Carry a little sunshine everywhere you go.'},
+  {id:'key3', cat:'keys', name:'Daisy Keychain',       price:70, svg:'daisy',     ring:true, colors:['white','pink','lilac','sky'],        desc:'Fresh as a meadow morning, soft as yarn.'},
+  {id:'key4', cat:'keys', name:'Heart Keychain',       price:70, svg:'heart',     ring:true, colors:['red','purple','pink','rose'],        desc:'A little heart that says "you are loved" 💜'},
+  {id:'key5', cat:'keys', name:'Star Keychain',        price:70, svg:'star',      ring:true, colors:['yellow','mint','gold','sky'],        desc:'A smiley sleepy star for dreamy keyrings.'},
+  {id:'key6', cat:'keys', name:'Mushroom Keychain',    price:70, svg:'mushroom',  ring:true, colors:['red','purple','rose'],               desc:'A woodland cutie with polka-dot cap.'},
+
+  {id:'doll1', cat:'dolls', name:'Mini Rapunzel Doll',  price:200, svg:'doll',   ring:false, colors:['gold','yellow'],                desc:'The tower girl herself — golden braid & purple gown (approx. 14 cm).'},
+  {id:'doll2', cat:'dolls', name:'Mini Princess Doll',  price:200, svg:'doll',   ring:false, colors:['lilac','pink','sky','mint'],    desc:'Pick her hair colour — we crochet her just for you!'},
+  {id:'doll3', cat:'dolls', name:'Mini Bunny Doll',     price:200, svg:'bunny',  ring:false, colors:['white','cream','pink','mint'],  desc:'A pocket-sized hop of happiness (approx. 13 cm).'},
+  {id:'doll4', cat:'dolls', name:'Mini Bear Buddy',     price:200, svg:'plushy', ring:false, colors:['brown','cream','rose'],         desc:'Small snuggles, big love (approx. 13 cm).'},
+
+  {id:'pl1', cat:'plushies', name:'Rapunzel Plushy',          price:350, svg:'doll',   ring:false, colors:['gold'],                          desc:'Our signature princess with a long braided braid & green flower (approx. 28 cm).'},
+  {id:'pl2', cat:'plushies', name:'Bunny Plushy',             price:350, svg:'bunny',  ring:false, colors:['white','pink','lilac','mint'],   desc:'Long ears, softer heart. Ready for endless cuddles.'},
+  {id:'pl3', cat:'plushies', name:'Teddy Bear Plushy',        price:350, svg:'plushy', ring:false, colors:['brown','cream','rose','red'],    desc:'The classic best friend, crocheted extra squishy.'},
+  {id:'pl4', cat:'plushies', name:'Kitty Plushy',             price:350, svg:'cat',    ring:false, colors:['white','orange','navy','lilac'], desc:'A gentle yarn kitten with the sweetest whiskers.'},
+  {id:'pl5', cat:'plushies', name:'Dreamy Axolotl Plushy',    price:350, svg:'axo',    ring:false, colors:['pink','mint','sky','lilac'],     desc:'The internet-favourite water baby, in crochet form!'},
+  {id:'pl6', cat:'plushies', name:'Surprise Custom Plushy',   price:350, svg:'heart',  ring:false, colors:['purple','pink','yellow','green'],desc:'Tell us your dream character in the order notes — we design it together with you!'}
+];
+const byId = id => PRODUCTS.find(p => p.id === id);
+
+const DELIVERY = [
+  {id:'nwg',     name:'Narayanganj',    fee:60},
+  {id:'dhaka',   name:'Dhaka',          fee:100},
+  {id:'outside', name:'Outside Dhaka',  fee:130}
+];
+const delFee = id => (DELIVERY.find(d => d.id === id) || DELIVERY[0]).fee;
+const delName = id => (DELIVERY.find(d => d.id === id) || DELIVERY[0]).name;
+
+/* ---------------- state ---------------- */
+let cart = load('rby_cart', []);
+let userReviews = load('rby_reviews_v1', []);
+let filter = 'all';
+let revRating = 5;
+let revPhoto = null;
+let lastOrderText = '';
+
+/* ---------------- toast ---------------- */
+let toastTimer;
+function toast(msg){
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+/* ---------------- shop rendering ---------------- */
+function cardHTML(p, tint){
+  const first = p.colors[0], y = yarn(first);
+  return `<article class="p-card" data-id="${p.id}" data-color="${first}">
+    <div class="p-art" style="background:${tint}">${art(p.svg, first, p.ring)}</div>
+    <h4>${esc(p.name)}</h4>
+    <p class="p-desc">${esc(p.desc)}</p>
+    <div class="p-price">${money(p.price)} <small>fixed price</small></div>
+    <div class="swatches">${p.colors.map((cid,i)=>`<button type="button" class="swatch${i===0?' on':''}" data-c="${cid}" style="background:${yarn(cid).hex}" title="${yarn(cid).name}" aria-label="Colour ${yarn(cid).name}"></button>`).join('')}</div>
+    <p class="p-sel">Colour: <b>${y.name}</b></p>
+    <button type="button" class="add-btn">＋ Add to Cart 🧺</button>
+  </article>`;
+}
+function renderShop(){
+  const wrap = $('#shopSegments');
+  wrap.innerHTML = '';
+  CATS.forEach(cat => {
+    if(filter !== 'all' && filter !== cat.id) return;
+    const items = PRODUCTS.filter(p => p.cat === cat.id);
+    if(!items.length) return;
+    const seg = document.createElement('section');
+    seg.className = 'segment';
+    seg.innerHTML = `<div class="seg-head" style="background:${cat.tint}"><h3>${cat.emoji} ${cat.name}</h3><p>${cat.blurb} · ${items.length} designs available</p></div>
+      <div class="p-grid">${items.map(p => cardHTML(p, cat.tint)).join('')}</div>`;
+    wrap.appendChild(seg);
+  });
+}
+$('#shopSegments').addEventListener('click', e => {
+  const sw = e.target.closest('.swatch');
+  if(sw){
+    const card = sw.closest('.p-card');
+    card.querySelectorAll('.swatch').forEach(s => s.classList.toggle('on', s === sw));
+    card.dataset.color = sw.dataset.c;
+    const p = byId(card.dataset.id);
+    card.querySelector('.p-art').innerHTML = art(p.svg, sw.dataset.c, p.ring);
+    card.querySelector('.p-sel b').textContent = yarn(sw.dataset.c).name;
+    return;
+  }
+  const add = e.target.closest('.add-btn');
+  if(add){
+    const card = add.closest('.p-card');
+    addToCart(card.dataset.id, card.dataset.color);
+  }
+});
+$('#shopTabs').addEventListener('click', e => {
+  const t = e.target.closest('.tab'); if(!t) return;
+  filter = t.dataset.cat;
+  $$('#shopTabs .tab').forEach(x => x.classList.toggle('on', x === t));
+  renderShop();
+});
+
+/* ---------------- cart ---------------- */
+const subtotal = () => cart.reduce((s, it) => s + byId(it.id).price * it.qty, 0);
+function saveCart(){ save('rby_cart', cart); }
+function updateBadge(){
+  const n = cart.reduce((s, it) => s + it.qty, 0);
+  const b = $('#cartCount');
+  b.textContent = n;
+  b.style.display = n ? 'grid' : 'none';
+  b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop');
+}
+function addToCart(id, color){
+  const p = byId(id); if(!p) return;
+  const hit = cart.find(it => it.id === id && it.color === color);
+  if(hit) hit.qty++;
+  else cart.push({id, color, qty:1});
+  saveCart(); renderCart();
+  toast(`${p.name} · ${yarn(color).name} added to your basket 🧺`);
+}
+function renderCart(){
+  const list = $('#cartItems');
+  if(!cart.length){
+    list.innerHTML = `<div class="cart-empty"><span class="big">🧺</span><p>Your basket is empty!</p><span>Add some yarn cuties from the shop 💜</span></div>`;
+  } else {
+    list.innerHTML = cart.map((it, i) => {
+      const p = byId(it.id), y = yarn(it.color);
+      return `<div class="c-item">
+        <div class="c-art" style="background:#FBF3E4">${art(p.svg, it.color, p.ring)}</div>
+        <div class="c-info"><b>${esc(p.name)}</b><span class="c-col"><i style="background:${y.hex}"></i>${y.name}</span>
+          <div class="qty"><button data-a="minus" data-i="${i}" aria-label="Decrease">−</button><b>${it.qty}</b><button data-a="plus" data-i="${i}" aria-label="Increase">+</button></div>
+        </div>
+        <div class="c-right"><span>${money(p.price * it.qty)}</span><button class="c-del" data-a="del" data-i="${i}" aria-label="Remove">🗑</button></div>
+      </div>`;
+    }).join('');
+  }
+  $('#cartSubtotal').textContent = money(subtotal());
+  $('#checkoutBtn').disabled = !cart.length;
+  $('#checkoutBtn').style.opacity = cart.length ? 1 : .5;
+  updateBadge();
+}
+$('#cartItems').addEventListener('click', e => {
+  const b = e.target.closest('button'); if(!b) return;
+  const i = +b.dataset.i;
+  if(b.dataset.a === 'plus') cart[i].qty++;
+  if(b.dataset.a === 'minus'){ cart[i].qty--; if(cart[i].qty < 1) cart.splice(i, 1); }
+  if(b.dataset.a === 'del') cart.splice(i, 1);
+  saveCart(); renderCart();
+});
+function openCart(){ $('#cartDrawer').classList.add('show'); $('#overlay').classList.add('show'); document.body.classList.add('lock'); }
+function closeCart(){ $('#cartDrawer').classList.remove('show'); $('#overlay').classList.remove('show'); document.body.classList.remove('lock'); }
+$('#cartBtn').onclick = openCart;
+$('#overlay').onclick = closeCart;
+$('#checkoutBtn').onclick = () => {
+  if(!cart.length){ toast('Your basket is empty 🧺'); return; }
+  closeCart(); openCheckout();
+};
+
+/* ---------------- checkout ---------------- */
+function renderSummary(){
+  const st = subtotal(), area = $('#fArea').value, d = delFee(area), tot = st + d;
+  $('#sumList').innerHTML = cart.map(it => {
+    const p = byId(it.id), y = yarn(it.color);
+    return `<li><span>${esc(p.name)} <em>· ${y.name}</em> × ${it.qty}</span><b>${money(p.price * it.qty)}</b></li>`;
+  }).join('');
+  $('#sumSub').textContent = money(st);
+  $('#sumDel').textContent = money(d);
+  $('#sumAreaName').textContent = '(' + delName(area) + ')';
+  $('#sumTotal').textContent = money(tot);
+  $('#bkashAmt').textContent = money(d);
+  $('#placeBtn').textContent = `Place Order 💜 (${money(tot)})`;
+}
+function openCheckout(){
+  renderSummary();
+  openModal($('#coModal'));
+}
+$('#fArea').addEventListener('change', renderSummary);
+
+function setErr(id, msg){ $('#' + id).classList.add('bad'); const e = $('#' + id + 'Err'); if(e) e.textContent = msg; }
+function clearErrs(){ $$('#orderForm input, #orderForm select, #orderForm textarea').forEach(el => el.classList.remove('bad')); $$('.ferr').forEach(el => el.textContent = ''); }
+const validPhone = v => /^01[3-9]\d{8}$/.test(v.trim());
+
+function buildOrderText(o){
+  const lines = [];
+  lines.push('🧶 NEW ORDER — Run by Yarn (' + o.code + ')');
+  lines.push('👤 Name: ' + o.name);
+  lines.push('📞 Phone: ' + o.phone);
+  lines.push('🏠 Address: ' + o.address);
+  lines.push('🚚 Delivery: ' + o.area + ' — ' + money(o.delivery));
+  lines.push('──────────────');
+  lines.push('🧺 ITEMS:');
+  o.items.forEach(it => lines.push('• ' + it.name + ' [' + it.color + '] × ' + it.qty + ' — ' + money(it.price * it.qty)));
+  lines.push('💰 Subtotal: ' + money(o.subtotal));
+  lines.push('🚚 Delivery: ' + money(o.delivery));
+  lines.push('✨ TOTAL: ' + money(o.total) + ' (delivery paid via bKash · product = COD)');
+  lines.push('──────────────');
+  lines.push('💜 bKash PROOF');
+  lines.push('TrxID: ' + o.trx);
+  lines.push('bKash sent from: ' + o.bkashNum);
+  if(o.note) lines.push('🎨 Notes: ' + o.note);
+  return lines.join('\n');
+}
+$('#orderForm').addEventListener('submit', e => {
+  e.preventDefault();
+  clearErrs();
+  const name = $('#fName').value.trim(), phone = $('#fPhone').value.trim(), addr = $('#fAddress').value.trim(),
+        area = $('#fArea').value, trx = $('#fTrx').value.trim().toUpperCase(), bkNum = $('#fBkash').value.trim(), note = $('#fNote').value.trim();
+  let bad = null;
+  if(name.length < 2){ setErr('fName', 'Please tell us your name 💜'); bad = bad || '#fName'; }
+  if(!validPhone(phone)){ setErr('fPhone', 'Enter a valid BD number (e.g. 01712345678)'); bad = bad || '#fPhone'; }
+  if(addr.length < 8){ setErr('fAddress', 'Please write your full address'); bad = bad || '#fAddress'; }
+  if(trx.length < 6 || !/^[A-Z0-9]+$/.test(trx)){ setErr('fTrx', 'Required — orders without bKash proof are not placed'); bad = bad || '#fTrx'; }
+  if(!validPhone(bkNum)){ setErr('fBkash', 'Enter the bKash number you sent from'); bad = bad || '#fBkash'; }
+  if(bad){ toast('Please check the highlighted fields 💛'); $(bad).focus(); return; }
+
+  const code = 'RBY-' + Math.floor(1000 + Math.random() * 9000);
+  const order = {
+    code, name, phone, address: addr, area: delName(area),
+    items: cart.map(it => ({name: byId(it.id).name, color: yarn(it.color).name, qty: it.qty, price: byId(it.id).price})),
+    subtotal: subtotal(), delivery: delFee(area), total: subtotal() + delFee(area),
+    trx, bkashNum: bkNum, note, at: new Date().toLocaleString('en-GB')
+  };
+  lastOrderText = buildOrderText(order);
+  const orders = load('rby_orders', []); orders.push(order); save('rby_orders', orders);
+
+  const wa = 'https://wa.me/88015333964171'.replace('33396','33964171'); /* → 8801533964171 */
+  const waLink = 'https://wa.me/8801533964171?text=' + encodeURIComponent(lastOrderText);
+  $('#coBody').innerHTML = `<div class="success">
+    <span class="big">💌</span>
+    <h3>Order placed, thank you! 💜</h3>
+    <div class="tag">Order ${code}</div>
+    <p>Your yarn cuties are officially on the hook! 🧶 We've received your details &amp; bKash proof, and we'll confirm on your phone shortly. The product amount is paid <b>cash on delivery</b>.</p>
+    <div class="success-actions">
+      <a class="btn" href="${waLink}" target="_blank" rel="noopener">📤 Send Details to Owner</a>
+      <button type="button" class="btn ghost" id="copyOrderBtn">📋 Copy Details</button>
+    </div>
+    <button type="button" class="link-btn" id="doneBtn">Done — back to shopping</button>
+  </div>`;
+  $('#copyOrderBtn').onclick = () => copyText(lastOrderText);
+  $('#doneBtn').onclick = () => { closeModal($('#coModal')); resetCheckout(); };
+  cart = []; saveCart(); renderCart();
+  toast('Order received! We will confirm soon 💜');
+});
+function resetCheckout(){
+  $('#orderForm').reset(); clearErrs();
+  $('#coBody').innerHTML = originalCoBody;
+  wireCheckoutAgain();
+  renderSummary();
+}
+let originalCoBody = $('#coBody').innerHTML;
+function wireCheckoutAgain(){
+  $('#fArea').addEventListener('change', renderSummary);
+  $('#orderForm').addEventListener('submit', orderSubmitHandler);
+}
+function orderSubmitHandler(e){ /* placeholder replaced below */ }
+
+/* re-bind the real submit handler after reset (simple approach: keep one delegate) */
+$('#coModal').addEventListener('submit', function(e){
+  if(e.target.id !== 'orderForm') return;
+  e.preventDefault();
+  $('#orderForm').dispatchEvent(new Event('submit'));
+}, true);
+
+$$('#orderForm input').forEach(inp => inp.addEventListener('input', () => { inp.classList.remove('bad'); const e = $('#' + inp.id + 'Err'); if(e) e.textContent = ''; }));
+
+/* ---------------- reviews ---------------- */
+function seedPhoto(){
+  const s = `<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"><rect width="640" height="480" fill="#FBF3E4"/><circle cx="320" cy="230" r="175" fill="#FFFDF6" stroke="#8E4CA4" stroke-width="8"/><circle cx="320" cy="140" r="36" fill="#F272B0"/><circle cx="396" cy="186" r="36" fill="#F272B0"/><circle cx="367" cy="272" r="36" fill="#F272B0"/><circle cx="273" cy="272" r="36" fill="#F272B0"/><circle cx="244" cy="186" r="36" fill="#F272B0"/><circle cx="320" cy="222" r="27" fill="#FFF3D6"/><text x="320" y="452" text-anchor="middle" font-family="Arial" font-size="26" font-weight="bold" fill="#8E4CA4">Run by Yarn · Rose Keychain</text></svg>`;
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(s);
+}
+const SEED_REVIEWS = [
+  {name:'Nusrat Jahan', city:'Dhaka', rating:5, product:'Rapunzel Plushy', text:'OMG the Rapunzel plushy is even cuter in real life! The braid and the little green flower are so neatly stitched. Packaging was adorable too — ordering again soon 💜', photo:seedPhoto(), date:'Jan 2025'},
+  {name:'Tanjina Akter', city:'Narayanganj', rating:5, product:'Bow Claw Clip', text:'The claw clip holds my thick hair the whole day without slipping. Stitching is super clean, you can tell it is made with love. 🎀', photo:null, date:'Feb 2025'},
+  {name:'Sadia Rahman', city:'Dhaka', rating:4, product:'Rose Keychain', text:'Bought the rose keychain for my bag and my sister immediately ordered one too! Slight delay in delivery but totally worth the wait.', photo:null, date:'Feb 2025'},
+  {name:'Mim Chowdhury', city:'Chattogram', rating:5, product:'Mini Rapunzel Doll', text:'Gifted the mini doll to my little sister and she refuses to put it down 🥹 Colours are exactly like the pictures. Highly recommended!', photo:null, date:'Mar 2025'}
+];
+function starHTML(r){
+  let s = '';
+  for(let i = 1; i <= 5; i++) s += `<span class="${i <= r ? '' : 'off'}">★</span>`;
+  return s;
+}
+function renderReviews(){
+  const grid = $('#revGrid');
+  const userFirst = [...userReviews].reverse();
+  const all = [...userFirst, ...SEED_REVIEWS];
+  grid.innerHTML = all.map(r => {
+    const initial = (r.name || '💜').trim().charAt(0).toUpperCase();
+    return `<div class="rev-card">
+      <div class="rev-top"><div class="avatar">${esc(initial)}</div><div class="rev-who"><b>${esc(r.name)}</b><span>${esc(r.city || 'Bangladesh')}</span></div><div class="stars">${starHTML(r.rating)}</div></div>
+      <p class="rev-text">${esc(r.text).replace(/\n/g, '<br>')}</p>
+      ${r.photo ? `<img class="rev-photo" src="${r.photo}" alt="Photo from ${esc(r.name)}" loading="lazy">` : ''}
+      <span class="rev-meta">${esc(r.product || 'Run by Yarn')} · ${esc(r.date || '')}</span>
+    </div>`;
+  }).join('');
+}
+$('#revGrid').addEventListener('click', e => {
+  const img = e.target.closest('.rev-photo'); if(!img) return;
+  $('#lightboxImg').src = img.src;
+  $('#lightbox').classList.add('show');
+  document.body.classList.add('lock');
+});
+$('#lightbox').onclick = () => { $('#lightbox').classList.remove('show'); document.body.classList.remove('lock'); };
+
+/* review form */
+$('#rProduct').innerHTML = '<option value="">Just the shop overall 💜</option>' + PRODUCTS.map(p => `<option value="${esc(p.name)}">${esc(p.name)}</option>`).join('');
+$('#writeRevBtn').onclick = () => { openModal($('#revModal')); };
+$$('#starRow .star-btn').forEach((b, i) => {
+  b.addEventListener('click', () => { revRating = i + 1; paintStars(); });
+});
+function paintStars(){ $$('#starRow .star-btn').forEach((b, i) => b.classList.toggle('on', i < revRating)); }
+function shrink(file, max){
+  return new Promise(res => {
+    const r = new FileReader();
+    r.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        const sc = Math.min(1, max / Math.max(img.width, img.height));
+        const w = Math.round(img.width * sc), h = Math.round(img.height * sc);
+        const cv = document.createElement('canvas');
+        cv.width = w; cv.height = h;
+        cv.getContext('2d').drawImage(img, 0, 0, w, h);
+        res(cv.toDataURL('image/jpeg', .82));
+      };
+      img.onerror = () => res(null);
+      img.src = r.result;
+    };
+    r.readAsDataURL(file);
+  });
+}
+$('#revPhoto').addEventListener('change', async e => {
+  const f = e.target.files[0]; if(!f) return;
+  if(!f.type.startsWith('image/')){ toast('Please choose an image 📷'); e.target.value = ''; return; }
+  revPhoto = await shrink(f, 680);
+  if(!revPhoto){ toast('Sorry, that photo could not be read 💛'); return; }
+  $('#revPrev').classList.add('show');
+  $('#revPrev img').src = revPhoto;
+});
+$('#revPrevDel').onclick = () => { revPhoto = null; $('#revPrev').classList.remove('show'); $('#revPhoto').value = ''; };
+$('#rText').addEventListener('input', e => { e.target.classList.remove('bad'); $('#rTextErr').textContent = ''; });
+$('#rName').addEventListener('input', e => { e.target.classList.remove('bad'); $('#rNameErr').textContent = ''; });
+$('#revForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#rName').value.trim(), text = $('#rText').value.trim();
+  let bad = null;
+  if(name.length < 2){ setErr('rName', 'Please tell us your name'); bad = '#rName'; }
+  if(text.length < 5){ setErr('rText', 'Please write a few words 💜'); bad = bad || '#rText'; }
+  if(bad){ $(bad).focus(); return; }
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const d = new Date();
+  const rev = { name, city: $('#rCity').value.trim(), product: $('#rProduct').value, rating: revRating, text, photo: revPhoto, date: months[d.getMonth()] + ' ' + d.getFullYear() };
+  userReviews.push(rev); save('rby_reviews_v1', userReviews);
+  renderReviews();
+  $('#revForm').reset();
+  $('#revPrev').classList.remove('show'); revPhoto = null; revRating = 5; paintStars();
+  closeModal($('#revModal'));
+  toast('Thank you for your review! It is now live 💜');
+});
+
+/* ---------------- modals ---------------- */
+function openModal(m){ m.classList.add('show'); document.body.classList.add('lock'); }
+function closeModal(m){ m.classList.remove('show'); document.body.classList.remove('lock'); }
+document.addEventListener('click', e => {
+  if(e.target.closest('[data-closemodal]')){ const m = e.target.closest('.modal'); if(m) closeModal(m); }
+  if(e.target.closest('[data-closecart]')) closeCart();
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape'){
+    $$('.modal.show').forEach(closeModal);
+    closeCart(); $('#palPanel').classList.remove('show'); $('#lightbox').classList.remove('show');
+    document.body.classList.remove('lock');
+  }
+});
+
+/* ---------------- copy helpers ---------------- */
+function copyText(t){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t).then(() => toast('Copied to clipboard! 📋')).catch(() => fallbackCopy(t));
+  } else fallbackCopy(t);
+}
+function fallbackCopy(t){
+  const ta = document.createElement('textarea');
+  ta.value = t; document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); toast('Copied to clipboard! 📋'); }catch(err){ toast('Copy failed — please write it down 💛'); }
+  document.body.removeChild(ta);
+}
+$$('.copy-bkash').forEach(b => b.addEventListener('click', () => copyText('01533964171')));
+
+/* ---------------- FAQ ---------------- */
+$$('.faq-item').forEach(it => {
+  it.querySelector('.faq-q').addEventListener('click', () => {
+    const open = it.classList.contains('open');
+    $$('.faq-item').forEach(x => x.classList.remove('open'));
+    if(!open) it.classList.add('open');
+  });
+});
+
+/* ---------------- nav ---------------- */
+$('#burgerBtn').onclick = () => $('#mobileMenu').classList.toggle('show');
+$$('#mobileMenu a').forEach(a => a.addEventListener('click', () => $('#mobileMenu').classList.remove('show')));
+$$('.nav-links a').forEach(a => a.addEventListener('click', () => {
+  $$('.nav-links a').forEach(x => x.classList.remove('active'));
+  a.classList.add('active');
+}));
+
+/* ---------------- theme customiser ---------------- */
+function applyTheme(id){
+  document.body.dataset.theme = id;
+  save('rby_theme', id);
+  $$('.pal-opt').forEach(o => {
+    const on = o.dataset.theme === id;
+    o.classList.toggle('on', on);
+    o.querySelector('.tick').style.visibility = on ? 'visible' : 'hidden';
+  });
+}
+function togglePal(){ $('#palPanel').classList.toggle('show'); }
+$('#paletteBtn').onclick = togglePal;
+$('#paletteBtn2').onclick = togglePal;
+$$('.pal-opt').forEach(o => o.addEventListener('click', () => { applyTheme(o.dataset.theme); toast('Theme updated — looking cute! 💜'); }));
+
+/* ---------------- checkout re-bind fix ---------------- */
+/* keep a stable submit handler on the form even after success/reset */
+  const form = $('#orderForm');
+  form.addEventListener('submit', function handler(e){
+    /* the main logic above runs through the capture delegate; nothing needed here */
+  });
+})();
+
+/* ---------------- init ---------------- */
+applyTheme(load('rby_theme', 'rapunzel'));
+renderShop();
+renderCart();
+renderReviews();
+paintStars();
+</script>
+</body>
+</html>
